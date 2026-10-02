@@ -9,7 +9,8 @@
 </head>
 
 <body class="bg-base-100">
-    <h1 class="text-3xl font-bold underline">Home</h1>
+    <x-nav />
+    <main class="flex justify-center">{{ $slot }}</main>
 </body>
 
 </html>
