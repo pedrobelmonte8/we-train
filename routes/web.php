@@ -4,9 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\SessionsController;
 
-Route::get('/', function () {
-    return view('layout');
-});
+Route::get('/', [SessionsController::class, 'create']);
 
 Route::middleware('guest')->group(function () {
     //Register
